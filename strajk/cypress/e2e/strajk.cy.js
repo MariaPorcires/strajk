@@ -1,5 +1,7 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe('Booking spec', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:5173/');
   })
-})
+  
+    
+  })
