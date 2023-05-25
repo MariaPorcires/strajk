@@ -12,8 +12,11 @@ Som användare vill jag kunna välja skostorlek för varje spelare så varje spe
     - Man ska kunna lägga till fler spelare
 
 Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
+
     - Man ska kunna trycka på en knapp för att ta bort ett fält
 
 Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett ett bokningsnummer och totalsumma så jag vet hur mycket jag ska betala. (120 kr / person + 100 kr / bana).
 
 Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
+
++ tester för felhantering
