@@ -2,7 +2,7 @@
 
 Som användare vill jag kunna boka datum och tid samt ange antal spelare så att jag kan reservera 1 eller flera baner i bowlinghallen.
 
-    - Man ska kunna klicka på almenacka och välja datum
+    - Man ska kunna klicka på almanacka och välja datum
     - Man ska kunna skriva in tid
     - Man ska kunna skriva in hur många spelare och banor
 
