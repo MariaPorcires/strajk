@@ -24,8 +24,16 @@ describe('Booking spec', () => {
       cy.get('.booking-info__lanes').should('have.value', 1)
       
     })
-  
-    
+
+    it('should be able to add shoes', () => {
+      const size = 38;
+      cy.wait(1000)
+
+      cy.get('.shoes__button').click()
+      cy.get('.shoes__input').type(size)
+      cy.get('.shoes__input').should('have.value', 38)
+    })
+
   })
 
   
