@@ -27,11 +27,35 @@ describe('Booking spec', () => {
 
     it('should be able to add shoes', () => {
       const size = 38;
+      const secondSize = 41;
       cy.wait(1000)
 
       cy.get('.shoes__button').click()
       cy.get('.shoes__input').type(size)
       cy.get('.shoes__input').should('have.value', 38)
+
+      cy.get('.shoes__button').last().click()
+      cy.get('.shoes__input').last().type(secondSize)
+      cy.get('.shoes__input').last().should('have.value', 41)
+
+    })
+
+    it('should be able to remove shoes', () => {
+      const size = 38;
+      const secondSize = 41;
+      cy.wait(1000)
+
+      cy.get('.shoes__button').click()
+      cy.get('.shoes__input').type(size)
+      cy.get('.shoes__input').should('have.value', 38)
+
+      cy.get('.shoes__button').last().click()
+      cy.get('.shoes__input').last().type(secondSize)
+      cy.get('.shoes__input').last().should('have.value', 41)
+
+      cy.get('.shoes__button--small').last().click()
+      cy.get('.shoes__input').should('have.length', 1)
+      
     })
 
   })
