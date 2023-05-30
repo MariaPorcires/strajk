@@ -17,6 +17,9 @@ Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade k
 
 Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett ett bokningsnummer och totalsumma så jag vet hur mycket jag ska betala. (120 kr / person + 100 kr / bana).
 
+    - Man ska kunna klicka på en knapp när man har fyllt i formuläret för att ta sig vidare till nästa steg.
+    - Man ska få ett bokningsnr och totalsumma.
+
 Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
 
 + tester för felhantering
