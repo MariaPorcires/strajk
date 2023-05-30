@@ -14,4 +14,14 @@ describe('Navigation spec', () => {
         cy.get('.top__title').should('have.text', 'See you soon!')
     })
 
+    it('should be able to go to bookingpage from navigationpage', () => {
+        cy.get('.navigation__icon').click()
+        cy.get('.navigation__link').last().click()
+        cy.get('.top__title').should('have.text', 'See you soon!')
+        cy.wait(1000)
+        cy.get('.navigation__icon').click()
+        cy.get('.navigation__link').first().click()
+        cy.get('.top__title').should('have.text', 'Booking')
+    })
+
 })

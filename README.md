@@ -22,6 +22,7 @@ Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett 
 
 Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
 
+    
     - Man ska kunna klicka sig vidare till bekräftelsesidan och tillbaka
 
 + tester för felhantering
