@@ -4,7 +4,7 @@ describe('Confirmation spec', () => {
     });
 
     
-      it('should add a booking and go to confirmationpage when clicked and get bookingnumber', () => {
+      it('should be able to add a booking and go to confirmationpage when clicked and get bookingnumber', () => {
         const date = '2023-05-30';
         const time = '18:00'
         const bowlers = 2;
@@ -38,7 +38,7 @@ describe('Confirmation spec', () => {
         cy.get('.confirmation__input').invoke('val').should('have.length.greaterThan', 1 )
       })
       
-      it('should add a booking and show total sum', () => {
+      it('should be able to add a booking and show total sum', () => {
         const date = '2023-05-30';
         const time = '18:00'
         const bowlers = 2;
