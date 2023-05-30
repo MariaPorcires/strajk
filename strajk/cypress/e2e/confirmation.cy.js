@@ -3,7 +3,6 @@ describe('Confirmation spec', () => {
       cy.visit('http://localhost:5173/');
     });
 
-    
       it('should be able to add a booking and go to confirmationpage when clicked and get bookingnumber', () => {
         const date = '2023-05-30';
         const time = '18:00'
