@@ -196,6 +196,33 @@ describe('Booking spec', () => {
         cy.get('.error-message').should('contain', 'Fill out all the fields')
     })
 
+    it('should show errormessage when typing -1 instead of 1 in nr of players', () => {
+        const date = '2023-05-30';
+        const time = '18:00'
+        const bowlers = -1;
+        const lanes = 1;
+        cy.wait(1000)
+  
+        cy.get('.booking-info__date').type(date)
+        cy.get('.booking-info__date').should('have.value', '2023-05-30')
+        cy.get('[name="time"]').type(time)
+        cy.get('[name="time"]').should('have.value', '18:00')
+        cy.get('.booking-info__who').type(bowlers)
+        cy.get('.booking-info__who').should('have.value', '-1')
+        cy.get('.booking-info__lanes').type(lanes)
+        cy.get('.booking-info__lanes').should('have.value', 1)
+        
+        const size = 38;
+        cy.wait(1000)
+  
+        cy.get('.shoes__button').click()
+        cy.get('.shoes__input').type(size)
+        cy.get('.shoes__input').should('have.value', 38)
+  
+        cy.get('.booking__button').click()
+        cy.get('.error-message').should('contain', 'Fill out all the fields')
+    })
+
     it('should add a booking without matching nr of shoes with nr of players', () => {
         const date = '2023-05-30';
         const time = '18:00'
