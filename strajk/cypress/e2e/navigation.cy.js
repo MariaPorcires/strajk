@@ -3,7 +3,7 @@ describe('Navigation spec', () => {
       cy.visit('http://localhost:5173/');
     });
 
-    it('should be able to click navigationbutton to see choices', () => {
+    it('should be able to click navigationbutton and show links', () => {
         cy.get('.navigation__icon').click()
         cy.get('.navigation__link').should('be.visible')
     })
