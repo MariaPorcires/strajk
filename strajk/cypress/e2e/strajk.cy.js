@@ -58,7 +58,7 @@ describe('Booking spec', () => {
       
     })
 
-    it('should show errormessage when typing letters instead of numbers in input', () => {
+    it('should not be able to type letters instead of numbers in input', () => {
         const date = '2023-05-30';
         const time = '18:00'
         const bowlers = 'ooops';
