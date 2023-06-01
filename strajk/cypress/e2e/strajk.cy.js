@@ -90,7 +90,7 @@ describe('Booking spec', () => {
         cy.get('.error-message').should('contain', 'Fill out all the fields')
     })
 
-    it('should add a booking without typing in date', () => {
+    it('should not add a booking without typing in date', () => {
 
         const time = '18:00'
         const bowlers = 2;
@@ -120,7 +120,7 @@ describe('Booking spec', () => {
         cy.get('.error-message').should('contain', 'Fill out all the fields')
     })
 
-    it('should add a booking without typing in time', () => {
+    it('should not add a booking without typing in time', () => {
 
         const date = '2023-05-30';
         const bowlers = 2;
@@ -150,7 +150,7 @@ describe('Booking spec', () => {
         cy.get('.error-message').should('contain', 'Fill out all the fields')
     })
 
-    it('should add a booking without typing in number of players', () => {
+    it('should not add a booking without typing in number of players', () => {
         const date = '2023-05-30';
         const time = '18:00'
         const lanes = 1;
@@ -167,7 +167,7 @@ describe('Booking spec', () => {
         cy.get('.error-message').should('contain', 'Fill out all the fields')
     })
 
-    it('should add a booking without typing in number of lanes', () => {
+    it('should not add a booking without typing in number of lanes', () => {
         const date = '2023-05-30';
         const time = '18:00'
         const bowlers = 2;
@@ -223,7 +223,7 @@ describe('Booking spec', () => {
         cy.get('.error-message').should('contain', 'Fill out all the fields')
     })
 
-    it('should add a booking without matching nr of shoes with nr of players', () => {
+    it('should not add a booking without matching nr of shoes with nr of players', () => {
         const date = '2023-05-30';
         const time = '18:00'
         const bowlers = 2;
